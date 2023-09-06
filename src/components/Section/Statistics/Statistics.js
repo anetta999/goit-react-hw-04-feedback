@@ -6,7 +6,7 @@ export const Statistics = ({
   neutral = 0,
   bad = 0,
   total = 0,
-  positivePercentage,
+  positivePercentage = 0,
 }) => {
   return (
     <ul>
@@ -20,11 +20,11 @@ export const Statistics = ({
         <StatisticsText>Bad: {bad}</StatisticsText>
       </StatisticsItem>
       <StatisticsItem>
-        <StatisticsText>Total: {total()}</StatisticsText>
+        <StatisticsText>Total: {total}</StatisticsText>
       </StatisticsItem>
       <StatisticsItem>
         <StatisticsText>
-          Positive feedback: {positivePercentage() || 0}%
+          Positive feedback: {positivePercentage}%
         </StatisticsText>
       </StatisticsItem>
     </ul>
